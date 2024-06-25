@@ -103,7 +103,7 @@ class Cache:
         Connects to Redis server and flushing the database.
         """
         self._redis = redis.Redis()
-        self._redis.flushdb
+        self._redis.flushdb()
 
     @count_calls
     @call_history
